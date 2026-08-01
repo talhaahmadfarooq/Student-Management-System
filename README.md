@@ -21,21 +21,17 @@ A full-stack Student Management System built using Flask and SQLite.
 Talha Ahmad Farooq
 
 
+Useful Commands
 
-To Run this in VS:
-
-
-Next time you work on the project
-
-Open the Student-Management-System folder.
-
-Open a terminal.
-Run:
-cd backend
-
-Activate the virtual environment:
+Activate venv:
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\venv\Scripts\Activate.ps1
 
-Start the Flask app:
+Run Flask:
 python app.py
+
+Git:
+git status
+git add .
+git commit -m "..."
+git push
