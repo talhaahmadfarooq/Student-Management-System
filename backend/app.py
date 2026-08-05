@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_cors import CORS
 
 from config import Config
 from database import db
@@ -6,11 +7,14 @@ from models import Student
 from routes.students import students_bp
 
 app = Flask(__name__)
+CORS(app)
+
 app.config.from_object(Config)
 
 db.init_app(app)
 
 app.register_blueprint(students_bp)
+
 
 @app.route("/")
 def home():
